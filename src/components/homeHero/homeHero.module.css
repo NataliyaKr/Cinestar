@@ -1,0 +1,34 @@
+.homeHero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 120px 40px 40px 40px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.13) 37.5%, #000 46%);
+}
+
+.homeHeroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homeTitle {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.homeSubTitle {
+  font-size: 40px;
+  font-family: "Cormorant", serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.homeText {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
