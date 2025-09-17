@@ -4,11 +4,7 @@ import heroImg from "../assets/images/studio.jpg";
 const Home = () => {
   return (
     <article>
-      <HomeHero
-        heroImg={heroImg}
-        heroTitle="Cinestar studio"
-        heroSubTitle="Film & TV production"
-      />
+      <HomeHero heroImg={heroImg} heroTitle="Cinestar studio" />
     </article>
   );
 };

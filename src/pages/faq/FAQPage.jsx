@@ -1,4 +1,4 @@
-export default function FAQ() {
+export default function FAQPage() {
   return (
     <article>
       <h2>FAQ</h2>
