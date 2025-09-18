@@ -10,13 +10,13 @@ const BlogList = () => {
   if (blogError) return <p>{blogError}</p>;
 
   return (
-    <figure className={styles.container}>
+    <figure className={styles.blogList}>
       {blogs.map((blog) => (
-        <div key={blog._id}>
-          <img src={blog.image} alt="" />
-          <h2>{blog.title}</h2>
-          <p>{blog.description}</p>
-          <button onClick={() => navigate(`/blog/${blog.id}`)}>Læs mere</button>
+        <div key={blog._id} className={styles.blogCard}>
+          <img src={blog.image} alt="" className={styles.blogImg} />
+          <h2 className={styles.blogTitle}>{blog.title}</h2>
+          <p className={styles.blogText}>{blog.description}</p>
+          <button className={styles.blogBtn} onClick={() => navigate(`/blog/${blog.id}`)}>Læs mere</button>
         </div>
       ))}
     </figure>
