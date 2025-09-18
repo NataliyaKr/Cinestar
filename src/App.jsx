@@ -4,6 +4,7 @@ import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import footerImg from "./assets/images/liquifer.png";
 import BlogPage from "./pages/blogPage/BlogPage";
+import BlogPageDetails from "./pages/blogPageDetails/BlogPageDetails";
 import FAQPage from "./pages/faq/FAQPage";
 import ContactPage from "./pages/contactPage/ContactPage";
 
@@ -11,6 +12,7 @@ function App() {
   const routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/blog", element: <BlogPage /> },
+    { path: "/blog/:id", element: <BlogPageDetails /> },
     { path: "/faq", element: <FAQPage /> },
     { path: "/contact", element: <ContactPage /> },
   ]);

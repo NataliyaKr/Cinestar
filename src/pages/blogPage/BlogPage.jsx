@@ -1,10 +1,9 @@
-import Blog from "../../components/blog/Blog";
-
+import BlogList from "../../components/blogList/BlogList";
 
 export default function BlogPage() {
   return (
     <article>
-      <Blog />
+      <BlogList />
     </article>
   );
 }
