@@ -1,0 +1,21 @@
+.contactContainer {
+  padding: 100px 20px;
+  align-items: center;
+}
+
+.contactTitle {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+}
+
+.contactSubTitle {
+  font-size: 2rem;
+  font-family: "Cormorant", serif;
+  margin-top: 1.2rem;
+}
+
+.contactText {
+  font-size: 1rem;
+  margin-top: 1.2rem;
+}
