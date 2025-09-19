@@ -34,7 +34,7 @@ export const useFetchBlogs = () => {
       setBlogError(null);
       return data.data;
     } catch (error) {
-      setBlogError("Could not load blog");
+      setBlogError("Could not load blog", error);
     } finally {
       setBlogIsLoading(false);
     }

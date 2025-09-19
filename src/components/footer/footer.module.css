@@ -1,6 +1,10 @@
 .footer {
+  width: 100%;
   position: relative;
   padding: 22px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {

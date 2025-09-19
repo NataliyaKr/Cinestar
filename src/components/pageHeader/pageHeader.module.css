@@ -1,0 +1,49 @@
+.pageHeader {
+  position: relative;
+  width: 100%;
+  height: 18rem;
+  overflow: hidden;
+}
+.studioImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(38, 38, 38, 0.9);
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem;
+  inset: 0;
+}
+.infoHeader {
+  max-width: 800px;
+}
+.titleHeader {
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: "Cormorant", serif;
+}
+.linkHeader {
+  font-size: 1rem;
+}
+.navWhite {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.navOrange {
+  color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+  .pageHeader {
+    height: 19rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pageHeader {
+    height: 20rem;
+  }
+}
