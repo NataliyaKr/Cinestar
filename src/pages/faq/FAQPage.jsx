@@ -10,9 +10,11 @@ export default function FAQPage() {
     <>
       <PageHeader path="faq" current="FAQ" />
       <article className={styles.qContainer}>
-        <h2>OFTE STILLEDE SPØRGSMÅL</h2>
-        <h3>DE MEST ALMINDELIGE SPØRGSMÅL, VI FÅR</h3>
-        <p>
+        <h2 className={styles.qTitle}>OFTE STILLEDE SPØRGSMÅL</h2>
+        <h2 className={styles.qSubTitle}>
+          DE MEST ALMINDELIGE SPØRGSMÅL, VI FÅR
+        </h2>
+        <p className={styles.qText}>
           Her finder du svar på de spørgsmål, vi oftest bliver stillet om vores
           processer, tjenester og produktioner. Har du brug for yderligere
           information? Tøv ikke med at kontakte os!

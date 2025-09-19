@@ -24,6 +24,67 @@ export const useFetchBlogs = () => {
     }
   };
 
+  // Create blog
+  const createBlog = async (blogData) => {
+    setBlogIsLoading(true);
+    try {
+      const response = await fetch("http://localhost:3042/blog", {
+        method: "POST",
+        body: blogData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Error create blog");
+      }
+
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setBlogIsLoading(false);
+    }
+  };
+
+  // Refetch
+  const blogRefetch = () => {
+    return fetchBlogs();
+  };
+
+  // Update blog
+  const updateBlog = async (blogData) => {
+    try {
+      const response = await fetch(`http://localhost:3042/blog`, {
+        method: "PUT",
+        body: blogData,
+      });
+
+      if (!response.ok) {
+        console.log("Error updating blog");
+      }
+
+      const result = await response.json();
+      console.log(result);
+      return result;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  // Delete blog
+  const deleteBlog = async (id) => {
+    try {
+      const response = await fetch(`http://localhost:3042/blog/${id}`, {
+        method: "DELETE",
+      });
+
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   //Get blog by Id
   const fetchBlogById = async (id) => {
     setBlogIsLoading(true);
@@ -50,5 +111,9 @@ export const useFetchBlogs = () => {
     blogError,
     blogIsLoading,
     fetchBlogById,
+    createBlog,
+    blogRefetch,
+    updateBlog,
+    deleteBlog,
   };
 };
