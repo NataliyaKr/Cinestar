@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useFetchBlogs } from "../../hook/useFetchBlogs";
 import styles from "./blogList.module.css";
 import PageHeader from "../pageHeader/PageHeader";
+import MediaCard from "../mediaCard/MediaCard";
 
 const BlogList = () => {
   const { blogs, blogIsLoading, blogError } = useFetchBlogs();
@@ -28,6 +29,7 @@ const BlogList = () => {
           </div>
         ))}
       </figure>
+      <MediaCard />
     </>
   );
 };

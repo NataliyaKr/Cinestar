@@ -2,6 +2,7 @@ import styles from "./faqPage.module.css";
 import PageHeader from "../../components/pageHeader/PageHeader";
 import useFetchFAQ from "../../hook/useFetchFAQ";
 import Accordions from "../../components/accordions/Accordions";
+import MediaCard from "../../components/mediaCard/MediaCard";
 
 export default function FAQPage() {
   const { questions } = useFetchFAQ();
@@ -20,6 +21,7 @@ export default function FAQPage() {
           <Accordions q={q} key={q._id} />
         ))}
       </article>
+      <MediaCard />
     </>
   );
 }
