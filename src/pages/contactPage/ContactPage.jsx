@@ -1,7 +1,12 @@
+import PageHeader from "../../components/pageHeader/PageHeader";
+
 export default function ContactPage() {
   return (
-    <article>
-      <h2>Contact</h2>
-    </article>
+    <>
+      <PageHeader path="contact" current="KONTAKT" />
+      <article>
+        <h2>Contact</h2>
+      </article>
+    </>
   );
 }
