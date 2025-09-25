@@ -69,6 +69,10 @@
         transform: scaleX(1);
         transform-origin: bottom left;
       }
+
+      &.active {
+        color: var(--secondary-color);
+      }
     }
   }
 }
@@ -80,9 +84,31 @@
 
   .nav_links {
     display: flex;
-    position: static;
     flex-direction: row;
-    width: auto;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0;
+    min-height: auto;
+    position: static;
     background-color: transparent;
+  }
+
+  .nav_links li {
+    padding: 0;
+  }
+  .nav_links a {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav_links {
+    gap: 3rem;
+  }
+  .nav_links a {
+    font-size: 1.2rem;
+    font-weight: 800;
   }
 }
